@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>견적 요청</title>
+<link rel="stylesheet" href="/css/style.css">
+<script defer src="/js/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a href="/index.html">홈</a>
+      <a href="/products.html">제품 안내</a>
+      <a href="/quote.html">견적 요청</a>
+      <a href="/contact.html">문의하기</a>
+    </nav>
+  </div>
+</header>
+
+<h1 style="text-align:center;margin-top:1rem;">견적 요청</h1>
+<form id="quoteForm">
+  <input type="text" name="name" placeholder="이름" required>
+  <input type="text" name="phone" placeholder="연락처" required>
+  <input type="email" name="email" placeholder="이메일" required>
+  <select name="product" required>
+    <option value="">제품 종류 선택</option>
+    <option value="book">책자</option>
+    <option value="leaflet">리플렛</option>
+    <option value="catalog">카탈로그</option>
+  </select>
+  <input type="number" name="quantity" placeholder="수량" required>
+  <textarea name="message" placeholder="추가 요청사항" rows="4"></textarea>
+  <button class="btn" type="submit">제출</button>
+</form>
+
+<footer>
+  <div class="container">&copy; 2024 출판 인쇄 주문</div>
+</footer>
+</body>
+</html>

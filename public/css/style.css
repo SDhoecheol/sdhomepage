@@ -1,0 +1,87 @@
+/* Basic reset and font settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+header, footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #264b8b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.hero {
+  background: linear-gradient(#264b8b,#000);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.products-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product-item {
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input, form select, form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 30vh;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
