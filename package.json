@@ -1,8 +1,8 @@
 {
   "name": "sdhomepage",
   "version": "1.0.0",
-  "description": "홈페이지 개발",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
